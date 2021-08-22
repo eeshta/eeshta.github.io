@@ -1,0 +1,142 @@
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.9;
+  background-color: white;
+  z-index: 99;
+}
+
+#loading-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}
+
+.title h1 {
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto;    
+  text-align: center;
+  letter-spacing: .15em; /* Adjust as needed */
+  font-family: monospace;
+  font-size: 3em;
+  font-weight: bold;
+
+  color: #000066;
+}
+
+.center {
+  letter-spacing: .15em; /* Adjust as needed */
+  font-family: monospace;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(8, 28, 119);
+  position: absolute;
+  width: 90%;
+  top: 15%;
+  left: 50%;
+  margin-left: -50px; /* margin is -0.5 * dimension */
+  margin-top: -25px; 
+}​
+
+
+body {
+  background: white;
+  color: #fff;
+  font-family: monospace;
+  padding-top: 7em;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+}
+
+
+
+#instructions {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  padding-bottom: 6px;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+
+}
+
+.parent{
+  position: relative;
+  top:-100px;
+  right:-860px;
+}
+
+.image1 {
+  position: relative;
+  top:0;
+  left:0;
+}
+
+
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 3px solid #000066; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+  font-family: monospace;
+  font-size: 3em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: yellowgreen;
+  color: #000066;
+}
+
+
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000066; }
+}
+
+.button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(8, 28, 119);
+  border-color: rgb(8, 28, 119);
+  padding: 12px 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-radius: 8px;
+  font-weight: normal;
+  font-family: monospace;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 10px 15px rgba(79, 111, 214, 0.685);
+  background: rgb(1, 26, 136) ;
+  color:lightblue;
+}
